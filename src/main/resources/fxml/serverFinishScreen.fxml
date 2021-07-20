@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="447.0" prefWidth="600.0" style="-fx-background-color: #ccdaf5;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="TypingRacer.ServerFinishScreenController">
+    <children>
+        <Label layoutX="192.0" layoutY="14.0" text="Game Over!">
+            <font>
+                <Font name="Arial Bold" size="38.0" />
+            </font>
+        </Label>
+        <ListView fx:id="listRanking" layoutX="14.0" layoutY="56.0" prefHeight="337.0" prefWidth="109.0" />
+        <ListView fx:id="listName" layoutX="144.0" layoutY="57.0" prefHeight="337.0" prefWidth="274.0" />
+        <ListView fx:id="listTime" layoutX="437.0" layoutY="56.0" prefHeight="337.0" prefWidth="148.0" />
+      <Button fx:id="btnRtrn" layoutX="241.0" layoutY="405.0" mnemonicParsing="false" onAction="#btnRtrnClicked" style="-fx-background-color: ff0400;" text="Return to menu">
+         <font>
+            <Font name="Apple Braille" size="14.0" />
+         </font>
+      </Button>
+    </children>
+</AnchorPane>

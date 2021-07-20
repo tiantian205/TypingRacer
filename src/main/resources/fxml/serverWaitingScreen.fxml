@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: ccdaf5;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="TypingRacer.ServerWaitingScreenController">
+    <children>
+        <Button fx:id="btnCancel" layoutX="211.0" layoutY="330.0" mnemonicParsing="false" onAction="#returnToMenu" prefHeight="56.0" prefWidth="101.0" style="-fx-background-color: eb3423;" text="Cancel">
+            <font>
+                <Font name="Apple Color Emoji" size="22.0" />
+            </font></Button>
+        <Button fx:id="btnStart" layoutX="311.0" layoutY="330.0" mnemonicParsing="false" onAction="#startServerGame" prefHeight="56.0" prefWidth="101.0" style="-fx-background-color: #75fa4c;" text="Start!">
+            <font>
+                <Font name="Apple Color Emoji" size="22.0" />
+            </font></Button>
+        <Button fx:id="btnRefresh" layoutX="259.0" layoutY="280.0" mnemonicParsing="false" onAction="#refreshListView" text="refresh names" />
+        <ListView fx:id="playerList" layoutX="211.0" layoutY="80.0" prefHeight="200.0" prefWidth="200.0" />
+        <TextField fx:id="txtIPAddress" layoutX="300.0" layoutY="34.0" prefHeight="27.0" prefWidth="200.0" />
+        <Text layoutX="152.0" layoutY="53.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Server's IP address: ">
+            <font>
+                <Font name="Arial" size="16.0" />
+            </font>
+        </Text>
+      <Label layoutX="444.0" layoutY="80.0" text="Players joined:" />
+      <TextField fx:id="txtTotalPlayer" layoutX="534.0" layoutY="75.0" prefHeight="27.0" prefWidth="61.0" />
+    </children>
+</AnchorPane>
